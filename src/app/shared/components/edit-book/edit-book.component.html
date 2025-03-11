@@ -1,0 +1,21 @@
+
+<table style="width:550px;height:500px">
+
+    <tbody>
+        <tr>
+            <td>Book Id</td><td><input type="text" readonly [value]="book?.bookId" style="width: 20px;"/></td>
+        </tr>
+        <tr>
+            <td>Title</td><td><input type="text" style="width: 300px;" [(ngModel)]="book.title"/></td>
+        </tr>
+        <tr>
+            <td>Genre</td><td><input type="text"  style="width: 100px;" [(ngModel)]="book.genre"/></td>
+        </tr>
+        <tr>
+            <td>Summary</td><td><textarea style="height: 200px;" rows="4" cols="30" [(ngModel)]="book.summary"></textarea></td>
+        </tr>
+        <tr>
+            <td></td><td><input type="button" value="Save & close" (click)="saveClose();"/> <button mat-button mat-dialog-close>Close</button></td>
+        </tr>
+    </tbody>
+  </table>
